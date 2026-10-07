@@ -12,7 +12,7 @@ getData("https://pokeapi.co/api/v2/pokemon");
 
 <template>
     <h1>Pokemons</h1>
-    <P v-if="loading">Cargando información....</P>
+    <p v-if="loading">Cargando información....</p>
     <div class="alert alert-danger mt-2" v-if="error">{{ error }}</div>
     <div v-if="data">
     <ul class="list-group">
